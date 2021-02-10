@@ -1,0 +1,275 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <!-- Bootstrap CSS (bootstrap.min.css), before the custom styles -->
+  <link rel="stylesheet" href="bootstrap-4.1.3/dist/css/bootstrap.min.css">
+  <!--the custom styles for this website, after the bootstrap.min.css-->
+  <link rel="stylesheet" href="startup.css">
+</head>
+
+<body>
+  <!--add class: navbar-fixed-top//to stay fixed on the top all time when we scroll-->
+  <nav class="navbar navbar-expand-lg navbar-light bg-light navbar-fixed-top">
+    <!--we want this navbar-brand (the Logo) to be visible t.e. to be outside of the collapsed div section;inside we have an img (logo) with height:26 to be smaller(because the img was too big)-->
+    <a class="navbar-brand" href="#"><img src="img/logo.png" alt="startup.logo" height="26"></a>
+    <!--change data-target value to #startupNavbar(id of the our collapsed navbar)-->
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#startupNavbar"
+      aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <!--change like this: id="starupNavbar"; li>a.btn.btn-primary(blue button);ml-auto on ul//and the navigation list(ul) will move to the right end of the container(it can also with class:pull-sm-right but it doesn't work here)//-->
+    <div class="collapse navbar-collapse" id="startupNavbar">
+      <ul class="navbar-nav mt-2 ml-auto">
+        <li class="nav-item active">
+          <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Feature</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Pricing</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Blog</a>
+        </li>
+        <li class="nav-item">
+          <a class="btn btn-primary" href="#">Sign In</a>
+        </li>
+      </ul>
+
+      <!-- <form class="form-inline my-2 my-lg-0">
+            <input class="form-control mr-sm-2" type="search" placeholder="Search">
+            <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+          </form> -->
+    </div>
+  </nav>
+  <!--hero section with id="stage">div#stage-caption>h1+p+a.btn...(with + =>siblings elements, not childs like >)-->
+  <div id="stage">
+    <div id="stage-caption">
+      <h1 class="display-3">That's handy Harry! Stick it in the startup.logo</h1>
+      <p>I see startup.logo in your future.</p>
+      <a href="" class="btn btn-lg btn-success">Sign up now</a>
+    </div>
+  </div>
+
+  <section id="feature-one">
+     <div class="container">
+       <!--this div.feature-content should stay here after or before the .container(but no after the .row because it won't work). we want here to can style the .container div-->
+      <div class="feature-content">
+        <div class="row">
+          <div class="col-lg-6">
+            <!--iframe video.//go to youTube video->share->embed->copy the .html code and past here, change only the width:100%-->
+            <iframe width="100%" height="315" src="https://www.youtube.com/embed/ZTLAx3VDX7g" frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowfullscreen></iframe>
+          </div>
+          <!--col-lg-offset-1 is that one column space between .col-lg-6 and col-lg-5..(shift col-lg-5 for 1 column to right)-->
+          <div class="col-lg-5 col-lg-offset-1">
+            <h6>Watch this</h6>
+            <h2>Withess the power of startup.logo in this acapella video.</h2>
+            <p class="lead">Lorem ipsum, or lipsum as it is sometimes known, is dummy text used in laying out print,
+              graphic or web designs.</p>
+            <p>Lorem ipsum, or lipsum as it is sometimes known, is dummy text used in laying out print, graphic or web
+              designs. The passage is attributed to an unknown typesetter in the 15th century who is thought to have
+              scrambled parts of Cicero's De Finibus Bonorum et Malorum for use in a type specimen book.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="feature-two" class="feature-dark">
+    <div class="container">
+      <!--.feature-content mustg be here after or befor the.container(but not after the.row)-->
+      <div class="feature-content">
+       <div class="row">
+         <div class="col-lg-6 feature-caption">
+            <h6>Incredible feature</h6>
+            <h2>Totaly random websites</h2>
+            <p class="lead">Lorem ipsum, or lipsum as it is sometimes known, is dummy text used in laying out print, graphic or web
+              designs. The passage is attributed to an unknown typesetter in the 15th century who is thought to have
+              scrambled parts of Cicero's De Finibus Bonorum et Malorum for use in a type specimen book</p>
+              <!--add the atribute role="button" for semantic purposes-->
+              <a href="" role="button" class="btn btn-secondary-outline btn-lg">Get in on the action</a>
+          </div>
+          <!--with class: hidden-sm-down //hide this div element for small and extra small devices(down)(if we got -up, then hid for sm, md, lg...)-->
+          <div class="col-lg-6 text-sm-center hidden-md-down">
+            <img src="img/iphone-1.png" alt="iphone-1" class="iphone img-fluid d-block">
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="feature-three">
+    <div class="container">
+      <div class="feature-content">
+        <div class="row">
+          <div class="col-lg-6 hidden-md-down">
+            <img src="img/macbook.png" alt="macbook" class="macbook img-fluid d-block">
+          </div>
+          <div class="col-lg-5 col-lg-offset-1">
+            <h6>The wow factor</h6>
+            <h2>Totaly random websites</h2>
+            <p class="lead">Lorem ipsum, or lipsum as it is sometimes known, is dummy text used in laying out print, graphic or web
+              designs. The passage is attributed to an unknown typesetter in the 15th century who is thought to have
+              scrambled parts of Cicero's De Finibus Bonorum et Malorum for use in a type specimen book</p>
+              <!--add the atribute role="button" for semantic purposes-->
+              <a href="#" role="button" class="btn btn-primary-outline btn-lg">Get in on the action</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="feature-four" class="feature-alt">
+    <div class="container">
+      <div class="feature-content">
+        <div class="row">
+          <div class="col-lg-6">
+            <div class="kudos-text">
+            <h6>Kudos</h6>
+            <!--&ldquo;//left "",&rdquo;//right -->
+            <blockquote class="blockquote">
+              &ldquo;No startup.logo, no kiss.&rdquo;
+              <footer class="blockquote-footer">
+                brelvis Hesley <cite>some guy at a wedding</cite>
+              </footer>
+            </blockquote>
+          </div>
+          </div>
+          <div class="col-lg-5 col-lg-offset-1">
+            <img src="img/brad-elvis.png" alt="brad-elvis">
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="feature-five" class="feature-full">
+    <div class="container">
+      <div class="feature-content">
+        <div class="row">
+          <!--with col-lg-offset-2 (2columns space from left), the.col-lg-8 will be in center-->
+          <div class="col-lg-8 col-lg-offset-2">
+            <h6>powerfully packed action</h6>
+            <h2>Totaly random websites</h2>
+            <p class="lead">Lorem ipsum, or lipsum as it is sometimes known, is dummy text used in laying out print, graphic or web
+              designs. The passage is attributed to an unknown typesetter in the 15th century who is thought to have
+              scrambled parts of Cicero's De Finibus Bonorum et Malorum for use in a type specimen book</p>
+              <!--add the atribute role="button" for semantic purposes-->
+              <a href="#" role="button" class="btn btn-primary-outline btn-lg">Get in on the action</a>
+              <h6>With startup.logo you can:</h6>
+              <!--in Bootstrap I can nested rows in row and columns in columns(so these 6 col divs will be inside in the parent 8 col div)-->
+              <div class="row">
+                <div class="col-lg-6">
+                  <ul>
+                    <li>The passage is attributed to an unknown typesetter</li>
+                    <li>Cicero's De Finibus Bonorum et Malorum for use in a type specimen book</li>
+                  </ul>
+                </div>
+                <div class="col-lg-6">
+                  <ul>
+                    <li>Lorem ipsum, or lipsum as it is sometimes known, is dummy text</li>
+                    <li>The passage is attributed to an unknown typesetter in the 15th century</li>
+                  </ul>
+                </div>
+                <img src="img/macbook-2.png" alt="macbook-2">
+              </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="feature-six" class="feature-dark">
+    <div class="container">
+      <div class="feature-content">
+        <div class="row">
+          <div class="col-lg-6 hidden-md-down">
+            <img src="img/ipad.png" alt="ipad" class="ipad img-fluid d-block">
+          </div>
+          <div class="col-lg-5 col-lg-offset-1">
+            <h6>The all-in-one solution</h6>
+            <h2>Totaly random websites</h2>
+            <p class="lead">Lorem ipsum, or lipsum as it is sometimes known, is dummy text used in laying out print, graphic or web
+              designs. The passage is attributed to an unknown typesetter in the 15th century who is thought to have
+              scrambled parts of Cicero's De Finibus Bonorum et Malorum for use in a type specimen book</p>
+              <!--add the atribute role="button" for semantic purposes-->
+              <a href="#" role="button" class="btn btn-secondary-outline btn-lg">Mangos!(or mangoes?)</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="feature-seven">
+    <div class="container">
+      <div class="feature-content">
+        <div class="row">
+          <div class="col-lg-8 col-lg-offset-2">
+            <h6>100% no money back guarantee</h6>
+            <h2>Put your money where startup.logo mouth is</h2>
+            <p>Lorem ipsum, or lipsum as it is sometimes known, is dummy text used in laying out print, graphic or web
+              designs. The passage is attributed to an unknown typesetter in the 15th century who is thought to have
+              scrambled parts of Cicero's De Finibus Bonorum et Malorum for use in a type specimen book</p>
+              <a href="" role="button" class="btn btn-success-outline btn-lg">Toss some money our away</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer id="main-footer" class="bg-dark">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6">
+          &copy;Copyright by Brad
+        </div>
+        <div class="col-md-2">
+          <h6>Our product</h6>
+          <ul class="list-unstyled">
+            <li><a href="">Features</a></li>
+            <li><a href="">Solutions</a></li>
+            <li><a href="">Plans</a></li>
+            <li><a href="">Sign In</a></li>
+          </ul>
+        </div>
+        <div class="col-md-2">
+          <h6>Our team</h6>
+          <ul class="list-unstyled">
+            <li><a href="">About</a></li>
+            <li><a href="">Highlights</a></li>
+            <li><a href="">Investors</a></li>
+            <li><a href="">Partners</a></li>
+          </ul>
+        </div>
+        <div class="col-md-2">
+          <h6>Other things</h6>
+          <ul class="list-unstyled">
+            <li><a href="">Jobs</a></li>
+            <li><a href="">Contact</a></li>
+            <li><a href="">FAQ</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </footer>
+  
+
+  <!-- Optional JavaScript -->
+  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+    integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+    crossorigin="anonymous"></script>
+  <script src="bootstrap-4.1.3/dist/js/bootstrap.min.js"></script>
+</body>
+</html>
